@@ -1,23 +1,9 @@
-#include <stdio.h>
+#include "lab.h"
 
-int preparation(double resistance[]);
-
-int main()
+int preparation(float resistance[])
 {
-    double resistance[100] = {0};
-
-    int pair = 0;
-
-    pair = preparation(resistance);
-
-    return 0;
-
-}
-
-int preparation(double resistance[])
-{
-    double voltage[100] = {0}; 
-    double current[100] = {0};
+    double voltage[MAX_EXPERIMENT_COUNT] = {0}; 
+    double current[MAX_EXPERIMENT_COUNT] = {0};
     int len = 0;
     double tmp = 0;
 

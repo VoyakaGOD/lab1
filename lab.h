@@ -1,7 +1,11 @@
 #ifndef LAB_HEADER
 #define LAB_HEADER
 
+#include <stdio.h>
+
 #define FLT_EPSILON 1e-30
+
+#define MAX_EXPERIMENT_COUNT 100
 
 int preparation(float resistance[]); 
 
