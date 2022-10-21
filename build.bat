@@ -1,1 +1,1 @@
-gcc lab.c check.c preparation.c -o lab.exe
+gcc lab.c check.c preparation.c data_select.c result.c -o lab.exe

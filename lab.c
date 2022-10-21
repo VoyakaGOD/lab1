@@ -2,10 +2,11 @@
 
 int main()
 {
+    int count = 0;
+    float mid = 0;
     float resistance[MAX_EXPERIMENT_COUNT] = {};
-    int M = preparation(resistance);
-    int K = data_select(M, resistance);
-    printf("%d\n", K);
-
-    return 0;
+    count = preparation(resistance);
+    count = data_select(count, resistance);
+    mid = result(count, resistance);
+    check(count, resistance, mid);
 }
