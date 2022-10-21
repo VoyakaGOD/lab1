@@ -1,4 +1,5 @@
 #include "lab.h"
+#include <stdio.h>
 
 int main()
 {
