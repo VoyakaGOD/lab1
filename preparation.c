@@ -2,7 +2,7 @@
 
 int preparation(float resistance[])
 {   
-    FILE* data = fopen("data.txt", "r");
+    FILE* data = fopen(DATA_FILE_NAME, "r");
     float voltage[MAX_EXPERIMENT_COUNT] = {0}; 
     float current[MAX_EXPERIMENT_COUNT] = {0};
     int len = 0;
