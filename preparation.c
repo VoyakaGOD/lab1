@@ -10,13 +10,12 @@ int preparation(float resistance[])
     float tmp_current = 0;
     int counter = 0;
 
-    puts("Input voltage/current");
+    printf("Input file: %s\n", DATA_FILE_NAME);
 
     while( (fscanf(data, " %f%*c%f", &tmp_voltage, &tmp_current) != EOF) && (counter < MAX_EXPERIMENT_COUNT))
     {
         voltage[counter] = tmp_voltage;
         current[counter] = tmp_current;
-        printf("[%d] = %f/%f\n", counter, voltage[counter], current[counter]);
         counter++;
     }
 
@@ -26,7 +25,7 @@ int preparation(float resistance[])
     {
         if (current[i] != 0)
         {
-            resistance[i] = voltage[i] / current[i];
+            resistance[i] = voltage[i] / current[i] * 1000;
         }
     }
 

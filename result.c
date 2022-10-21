@@ -14,7 +14,7 @@ float result(int K, float resistance[])
 
     deviation = sqrt(deviation) / K;
 
-    printf("The desired resistance and standart deviation\n%.3lg +- %.3lg\n", resistance_final, deviation);
+    printf("The desired resistance and standart deviation:\n%.3lg +- %.3lg\n", resistance_final, deviation);
 
     return resistance_final;
 }
