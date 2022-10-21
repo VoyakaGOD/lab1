@@ -5,12 +5,12 @@ int preparation(float resistance[])
     float voltage[MAX_EXPERIMENT_COUNT] = {0}; 
     float current[MAX_EXPERIMENT_COUNT] = {0};
     int len = 0;
-    double tmp = 0;
+    float tmp = 0;
 
     puts("Inputs your values of voltage");
 
     int counter = 0;
-    while(scanf(" %f", &tmp) == 1)
+    while(scanf("%f%*c", &tmp) == 1)
     {
         voltage[counter] = tmp;
         counter++;
@@ -21,7 +21,7 @@ int preparation(float resistance[])
     puts("Inputs your values of current");
     counter = 0;
 
-    while( (scanf(" %f", &tmp) == 1) && (counter < len))
+    while( (scanf(" %f%*c", &tmp) == 1) && (counter < len))
     {
         current[counter] = tmp;
         counter++;

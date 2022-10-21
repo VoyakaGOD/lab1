@@ -3,8 +3,9 @@
 int main()
 {
     float resistance[MAX_EXPERIMENT_COUNT] = {};
-    int count = preparation(resistance);
-    printf("%d\n", count);
+    int M = preparation(resistance);
+    int K = data_select(M, resistance);
+    printf("%d\n", K);
 
     return 0;
 }

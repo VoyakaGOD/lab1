@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+#include <math.h>
+
 #define FLT_EPSILON 1e-30
 
 #define MAX_EXPERIMENT_COUNT 100
