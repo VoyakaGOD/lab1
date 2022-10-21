@@ -9,4 +9,6 @@ int main()
     count = data_select(count, resistance);
     mid = result(count, resistance);
     check(count, resistance, mid);
+
+    return 0;
 }
