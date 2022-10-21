@@ -10,7 +10,7 @@ int preparation(float resistance[])
     puts("Inputs your values of voltage");
 
     int counter = 0;
-    while(scanf(" %lf", &tmp) == 1)
+    while(scanf(" %f", &tmp) == 1)
     {
         voltage[counter] = tmp;
         counter++;
@@ -21,7 +21,7 @@ int preparation(float resistance[])
     puts("Inputs your values of current");
     counter = 0;
 
-    while( (scanf(" %lf", &tmp) == 1) && (counter < len))
+    while( (scanf(" %f", &tmp) == 1) && (counter < len))
     {
         current[counter] = tmp;
         counter++;
