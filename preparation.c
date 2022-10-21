@@ -1,29 +1,22 @@
 #include "lab.h"
 
 int preparation(float resistance[])
-{
+{   
+    FILE* data = fopen("data.txt", "r");
     float voltage[MAX_EXPERIMENT_COUNT] = {0}; 
     float current[MAX_EXPERIMENT_COUNT] = {0};
     int len = 0;
-    float tmp = 0;
-
-    puts("Inputs your values of voltage");
-
+    float tmp_voltage = 0;
+    float tmp_current = 0;
     int counter = 0;
-    while(scanf("%f%*c", &tmp) == 1)
-    {
-        voltage[counter] = tmp;
-        counter++;
-    }
-    getchar();
-    len = counter;
 
-    puts("Inputs your values of current");
-    counter = 0;
+    puts("Input voltage/current");
 
-    while( (scanf(" %f%*c", &tmp) == 1) && (counter < len))
+    while( (fscanf(data, " %f%*c%f", &tmp_voltage, &tmp_current) != EOF) && (counter < MAX_EXPERIMENT_COUNT))
     {
-        current[counter] = tmp;
+        voltage[counter] = tmp_voltage;
+        current[counter] = tmp_current;
+        printf("[%d] = %f/%f\n", counter, voltage[counter], current[counter]);
         counter++;
     }
 
