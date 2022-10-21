@@ -1,0 +1,1 @@
+gcc lab.c check.c -o lab.exe
