@@ -1,9 +1,6 @@
-#include <stdio.h>
-#include <math.h>
+#include "lab.h"
 
-float result (int K, float resistance[]);
-
-float result (int K, float *resistance)
+float result(int K, float resistance[])
 {
     float resistance_final = 0, deviation = 0;
 

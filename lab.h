@@ -2,7 +2,6 @@
 #define LAB_HEADER
 
 #include <stdio.h>
-
 #include <math.h>
 
 #define FLT_EPSILON 1e-30
