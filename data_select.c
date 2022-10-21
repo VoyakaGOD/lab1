@@ -1,6 +1,4 @@
-#include<stdio.h>
 #include "lab.h"
-
 
 int data_select(int pairs, float resistance[])
 {
@@ -19,7 +17,7 @@ int data_select(int pairs, float resistance[])
 
     for (read_pos; read_pos < pairs; read_pos++)
     {   
-        if (fabs(resistance[read_pos] - resistance_average) / resistance_average < 0.03)  // 3% is погрешность 
+        if (fabs(resistance[read_pos] - resistance_average) / resistance_average < MAX_RESISTANCE_DEVIATION)
         {
             resistance[write_pos] = resistance[read_pos];
             write_pos++;

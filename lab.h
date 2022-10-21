@@ -9,6 +9,10 @@
 
 #define MAX_EXPERIMENT_COUNT 100
 
+#define MAX_RESISTANCE_DEVIATION 0.03
+
+#define DATA_FILE_NAME "data.txt"
+
 int preparation(float resistance[]); 
 
 int data_select(int M, float resistance[]); 
