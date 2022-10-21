@@ -2,8 +2,8 @@
 
 int preparation(float resistance[])
 {
-    double voltage[MAX_EXPERIMENT_COUNT] = {0}; 
-    double current[MAX_EXPERIMENT_COUNT] = {0};
+    float voltage[MAX_EXPERIMENT_COUNT] = {0}; 
+    float current[MAX_EXPERIMENT_COUNT] = {0};
     int len = 0;
     double tmp = 0;
 
@@ -35,11 +35,6 @@ int preparation(float resistance[])
         {
             resistance[i] = voltage[i] / current[i];
         }
-    }
-
-    for (int i = 0; i < len; i++)
-    {
-        printf("voltage = %g, current = %g, resistance = %g\n", voltage[i], current[i], resistance[i]);
     }
 
     return len;
